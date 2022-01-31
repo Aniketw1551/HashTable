@@ -11,7 +11,7 @@ namespace HashTable
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to HashTable Program");
-            string paragraph = "Nory was a Catholic because her mother was a Catholic, and Nory’s mother was a Catholic because her father was a Catholic";
+            string paragraph = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
             CountFrequencyofWords(paragraph);
             Console.ReadLine();
         }
@@ -27,7 +27,12 @@ namespace HashTable
                 else
                     myMapNode.Add(word.ToLower(), 1);
             }
-            Console.WriteLine("Display after add operation");
+            Console.WriteLine("Display after add operation\n");
+            myMapNode.Display();
+            Console.WriteLine("\nRemove word avoidable from hash table");
+            string a = "avoidable";
+            myMapNode.Remove(a);
+            Console.WriteLine("Element in hash table after removal of words\n");
             myMapNode.Display();
         }
     }
