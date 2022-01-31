@@ -11,7 +11,7 @@ namespace HashTable
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to HashTable Program");
-            string paragraph = "Nory was a Catholic because her mother was a Catholic, and Nory’s mother was a Catholic because her father was a Catholic";
+            string paragraph = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
             CountFrequencyofWords(paragraph);
             Console.ReadLine();
         }
